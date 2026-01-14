@@ -167,5 +167,5 @@ This project is licensed under the MIT License.
 
 ## 👤 Author
 
-**Praveen Thamaizharasan**
-Data Analyst / Aspiring ML Engineer
+**GUTTA HEMANTH**
+
