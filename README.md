@@ -1,10 +1,10 @@
-# 📄 Document Question & Answer Microservice (RAG)
+ Document Question & Answer Microservice (RAG)
 
 This project implements a **Document Question & Answer Microservice** using **Retrieval-Augmented Generation (RAG)**. The service enables users to upload documents (PDF/TXT) and ask questions, returning answers grounded in the uploaded document content.
 
 ---
 
-## 1️⃣ Project Overview & Selected Task
+Project Overview & Selected Task
 
 The selected task is to design and implement a **document-based question answering system** using RAG principles. The application is built as a **single microservice** focused entirely on this functionality.
 
@@ -36,7 +36,7 @@ Answer Generated (RAG)
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Language**: Python 3.14.2
 * **Framework**: FastAPI
@@ -48,7 +48,7 @@ Answer Generated (RAG)
 
 ---
 
-## 🐍 Python Version
+## Python Version
 
 ```
 Python 3.14.2
@@ -80,7 +80,7 @@ source venv/bin/activate
 
 ---
 
-## 📦 Dependency Installation
+## Dependency Installation
 
 ```
 python -m pip install fastapi uvicorn sentence-transformers transformers torch faiss-cpu PyPDF2 python-multipart openai
@@ -88,7 +88,7 @@ python -m pip install fastapi uvicorn sentence-transformers transformers torch f
 
 ---
 
-## ▶️ API Startup Command
+## API Startup Command
 
 ```
 python -m uvicorn main:app --reload
@@ -96,7 +96,7 @@ python -m uvicorn main:app --reload
 
 ---
 
-## 🔗 How to Check Endpoints
+## How to Check Endpoints
 
 ### Health Check Endpoint
 
@@ -117,7 +117,7 @@ http://127.0.0.1:8000/health
 
 ---
 
-## 📤 Upload Document Endpoint
+## Upload Document Endpoint
 
 **POST** `/upload`
 
@@ -143,7 +143,7 @@ http://127.0.0.1:8000/health
 
 ---
 
-## ❓ Query Endpoint
+## Query Endpoint
 
 **POST** `/query`
 
@@ -178,7 +178,7 @@ http://127.0.0.1:8000/health
 
 ---
 
-## 🧠 Notes and Assumptions
+## Notes and Assumptions
 
 * The application is implemented as a **single microservice** focused on document-based Q&A using RAG.
 * Only **one embedding provider** is active at a time (Sentence-Transformers, HuggingFace, or OpenAI), selected via configuration.
@@ -195,7 +195,7 @@ http://127.0.0.1:8000/health
 
 ---
 
-## 🗄️ Vector Database Initialization
+## Vector Database Initialization
 
 No manual VectorDB initialization is required:
 
@@ -206,7 +206,7 @@ No manual VectorDB initialization is required:
 
 ---
 
-## 🔐 Environment Variables
+## Environment Variables
 
 ### OPENAI_API_KEY
 
@@ -230,7 +230,7 @@ No manual VectorDB initialization is required:
 
 ---
 
-## 📌 Deliverables
+## Deliverables
 
 * Document-based Q&A microservice using RAG
 * REST APIs for upload and query
